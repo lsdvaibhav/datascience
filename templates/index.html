@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Artificial Intelligence</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  
+  <link href="{{ url_for('static',filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{ url_for('static',filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ url_for('static',filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+	
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <!-- Main Stylesheet File -->
+	<link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
+
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+	
+	<!-- ajax script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">Artificial Intelligence</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="menu-has-children" ><a href="#project">Projects</a>
+            <ul>
+			  <li><a href="#banking">Banking</a></li>
+              <li><a href="#alertSystem">Alert System</a></li>
+              <li><a href="#healthcare">Health-Care</a></li>
+              <li><a href="#Customer">Customer Use Case</a></li>
+              <li><a href="#Analysis">Data-Analysis</a></li>
+            </ul>
+          </li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="{{ url_for('static',filename='img/intro-carousel/1.jpg') }}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Artificial Intelligence</h2>
+                <p>Artificial intelligence [ AI ] refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static',filename='img/intro-carousel/2.jpg') }}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Machine Learning</h2>
+                <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static',filename='img/intro-carousel/3.jpg') }}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Deep Learning</h2>
+                <p>Deep learning is an AI function that mimics the workings of the human brain in processing data for use in detecting objects, recognizing speech, translating languages, and making decisions. Deep learning AI is able to learn without human supervision, drawing from data that is both unstructured and unlabeled.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static',filename='img/intro-carousel/4.jpg') }}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Data Science</h2>
+                <p>Data science is an interdisciplinary field focused on extracting knowledge from data sets, which are typically large ( big data). The field encompasses analysis, preparing data for analysis, and presenting findings to inform high-level decisions in an organization. As such, it incorporates skills from computer science, mathematics, statistics, information visualization, graphic design, and business.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="{{ url_for('static',filename='img/intro-carousel/5.jpg') }}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Big Data</h2>
+                <p>Big data is a field that treats ways to analyze, systematically extract information from, or otherwise deal with data sets that are too large or complex to be dealt with by traditional data-processing application software. Data with many cases (rows) offer greater statistical power, while data with higher complexity (more attributes or columns) may lead to a higher false discovery rate.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+	<!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ url_for('static',filename='img/about-mission.jpg') }}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ url_for('static',filename='img/about-plan.jpg') }}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{{ url_for('static',filename='img/about-vision.jpg') }}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="iconify" data-icon="emojione:bank" data-inline="false" data-width="31.5" data-height="36"></i></div>
+            <h4 class="title"><a href="">Banking </a></h4>
+            <p class="description">Artificial Intelligence is the future of banking as it brings the power of advanced data analytics to combat fraudulent transactions and improve compliance. ... AI also enables banks to manage huge volumes of data at record speed to derive valuable insights from it.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="iconify" data-icon="ant-design:alert-twotone" data-inline="false" data-width="31.5" data-height="36"></i></div>
+            <h4 class="title"><a href="">Alert System</a></h4>
+            <p class="description">Emergency alert systems serve as a critical link in the chain of crisis communication, and they are essential to minimize loss during emergencies. Acts of terrorism and violence, chemical spills, amber alerts, nuclear facility problems, weather-related emergencies, flu pandemics, and other emergencies.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="iconify" data-icon="emojione:hospital" data-inline="false" data-width="31.5" data-height="36"></i></div>
+            <h4 class="title"><a href="">Health Care</a></h4>
+            <p class="description">The efficiency of lab testing with artificial intelligence is undeniably higher through the use of intelligent machines that are embedded with software for digital imaging. When it comes to diagnostics, artificial intelligence based diagnostics through AI-based medical diagnosis devices offer a shorter turnaround time.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="iconify" data-icon="ls:group" data-inline="false" data-width="31.5" data-height="36"></i></div>
+            <h4 class="title"><a href="">Customer Behavior</a></h4>
+            <p class="description">AI lifts the limitations of traditional market segmentation by analyzing customer data to create more targeted segments. It goes one step further by automatically adjusting campaigns to be more personalized for each segment. AI also tweaks marketing campaigns for each segment by changing the variables involved.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="iconify" data-icon="uil:analysis" data-inline="false" data-width="31.5" data-height="36"></i></div>
+            <h4 class="title"><a href="">Data-Analysis</a></h4>
+            <p class="description">Automated data analysis is a system that per- forms a systematic process of inspecting, cleaning, transforming, and modeling data with the goal of dis- covering useful information, suggesting conclusions and supporting decision making for further analysis.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+
+        </div>
+		<div>
+		
+		</div>
+      </div>
+    </section><!-- #services -->
+	
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="banking">
+		<div class="container">
+        <header class="section-header wow fadeInUp">
+			<h3>Banking</h3>
+			<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+			<hr>
+		</header>
+			
+				<div class="wrap-contact100">
+					<div class="contact100-form validate-form">
+								<!-- details / info of ccfd -->
+								
+					</div>
+					<div class="contact100-more flex-col-c-m">
+						<div class="container">				
+							<h4 class="title" style="text-align: center;"><a href="">Credit Card Fraud Detection</a></h4>			
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v1"  id="v1" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v2"  id="v2" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v3"  id="v3" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v4" id="v4" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v5" id="v5" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v6" id="v6" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v7" id="v7" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v8"  id="v8" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v9"  id="v9" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v10" id="v10" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v11" id="v11" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v12"  id="v12" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v13" id="v13" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v14" id="v14" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v15"  id="v15" min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v16" id="v16" min="-3"  max="3"aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v7"  id="v17" min="-3"  max="3"aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v18"  id="v18"min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v19"  id="v19"min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v20"  id="v20"min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v21"  id="v21"min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v22" id="v22" min="-3"  max="3"aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v23" id="v23"min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v24" id="v24" min="-3"  max="3"aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v25"  id="v25" min="-3"  max="3"aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small"placeholder="v26"  id="v26" min="-3"  max="3"aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="v27"  id="v27"min="-3"  max="3" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" placeholder="amount" id="v28" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" id="v29" aria-describedby="inputGroup-sizing-sm">
+								</div>
+								<div class="col-md-4 input-group-sm mb-3">
+									<input type="number" class="form-control" aria-label="Small" id="v30" aria-describedby="inputGroup-sizing-sm">
+								</div>
+							</div>
+							<div class="flex-w size1 p-b-16">
+								<div class="flex-col size2">
+									<div id="alert_wrapper_cc"></div>
+								</div>
+							</div>
+							<button onclick="upload_cc('/credit');" id="upload_btn_cc" class="btn btn-primary" >Upload</button>
+
+							<button class="btn btn-primary d-none" id="loading_btn_cc" type="button" disabled>
+								<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+								Processing...
+							</button>
+
+							<button type="button" id="cancel_btn_cc" class="btn btn-secondary d-none">Cancel upload</button>
+											
+							<div id="progress_wrapper_cc" class="d-none">
+								<label id="progress_status_cc"></label>
+								<div class="progress mb-3">
+									<div id="progress_cc" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+										
+									
+						</div>
+						<br>
+					</div>
+				</div>
+			<script type="text/javascript">
+			
+
+				// Get a reference to the progress bar, wrapper & status label
+				var progress_cc = document.getElementById("progress_cc");
+				var progress_wrapper_cc = document.getElementById("progress_wrapper_cc");
+				var progress_status_cc = document.getElementById("progress_status_cc");
+
+				// Get a reference to the 3 buttons
+				var upload_btn_cc = document.getElementById("upload_btn_cc");
+				var loading_btn_cc = document.getElementById("loading_btn_cc");
+				var cancel_btn_cc = document.getElementById("cancel_btn_cc");
+
+				// Get a reference to the alert wrapper
+				var alert_wrapper_cc = document.getElementById("alert_wrapper_cc");
+
+				// Get a reference to the file input element & input label 
+				var v1 = document.getElementById("v1");
+				var v2 = document.getElementById("v2");
+				var v3 = document.getElementById("v3");
+				var v4 = document.getElementById("v4");
+				var v5 = document.getElementById("v5");
+				var v6 = document.getElementById("v6");
+				var v7 = document.getElementById("v7");
+				var v8 = document.getElementById("v8");
+				var v9 = document.getElementById("v9");
+				var v10 = document.getElementById("v10");
+				var v11 = document.getElementById("v11");
+				var v12 = document.getElementById("v12");
+				var v13 = document.getElementById("v13");
+				var v14 = document.getElementById("v14");
+				var v15 = document.getElementById("v15");
+				var v16 = document.getElementById("v16");
+				var v17 = document.getElementById("v17");
+				var v18 = document.getElementById("v18");
+				var v19 = document.getElementById("v19");
+				
+				var v20 = document.getElementById("v20");
+				var v21 = document.getElementById("v21");
+				var v22 = document.getElementById("v22");
+				var v23 = document.getElementById("v23");
+				var v24 = document.getElementById("v24");
+				var v25 = document.getElementById("v25");
+				var v26 = document.getElementById("v26");
+				var v27 = document.getElementById("v27");
+				var v28 = document.getElementById("v28");
+
+
+				
+
+				// Function to upload file
+				function upload_cc(url) {
+  
+
+				  // Reject if the file input is empty & throw alert
+				  if (!v1.value) {
+
+					show_alert_cc("Please Enter all values. ", "warning")
+
+					return;
+
+				  }
+
+				  // Create a new FormData instance
+				  var data = new FormData();
+				
+				  // Create a XMLHTTPRequest instance
+				  var request = new XMLHttpRequest();
+
+				  // Set the response type
+				  request.responseType = "json";
+
+				  // Clear any existing alerts
+				  alert_wrapper_cc.innerHTML = "";
+
+				
+				  
+
+				  // Hide the upload button
+				  upload_btn_cc.classList.add("d-none");
+
+				  // Show the loading button
+				  loading_btn_cc.classList.remove("d-none");
+
+				  // Show the cancel button
+				  cancel_btn_cc.classList.remove("d-none");
+
+				  // Show the progress bar
+				  progress_wrapper_cc.classList.remove("d-none");
+				
+				  //
+				  
+				  // Append the file to the FormData instance
+				  data.append("v1",v1.value);
+				  data.append("v2",v2.value);
+				  data.append("v3",v3.value);
+				  data.append("v4",v4.value);
+				  data.append("v5",v5.value);
+				  data.append("v6",v6.value);
+				  data.append("v7",v7.value);
+				  data.append("v8",v8.value);
+				  data.append("v9",v9.value);
+				  data.append("v10",v10.value);
+				  data.append("v11",v11.value);
+				  data.append("v12",v12.value);
+				  data.append("v13",v13.value);
+				  data.append("v14",v14.value);
+				  data.append("v15",v15.value);
+				  data.append("v16",v16.value);
+				  data.append("v17",v17.value);
+				  data.append("v18",v18.value);
+				  data.append("v19",v19.value);
+				  data.append("v20",v20.value);
+				  data.append("v21",v21.value);
+				  data.append("v22",v22.value);
+				  data.append("v23",v23.value);
+				  data.append("v24",v24.value);
+				  data.append("v25",v25.value);
+				  data.append("v26",v26.value);
+				  data.append("v27",v27.value);
+				  data.append("v28",v28.value);
+				  
+
+				  // request progress handler
+				  request.upload.addEventListener("progress", function (e) {
+
+					// Get the loaded amount and total filesize (bytes)
+					var loaded = e.loaded;
+					var total = e.total
+
+					// Calculate percent uploaded
+					var percent_complete = (loaded / total) * 100;
+
+					// Update the progress text and progress bar
+					progress_cc.setAttribute("style", `width: ${Math.floor(percent_complete)}%`);
+					progress_status_cc.innerText = `${Math.floor(percent_complete)}% uploaded`;
+
+				  })
+
+				  // request load handler (transfer complete)
+				  request.addEventListener("load", function (e) {
+
+					if (request.status == 200) {
+
+					  show_alert_cc(`${request.response.message}`, request.response.alert );
+					  
+					}
+					else {
+
+					  show_alert_cc(`Error uploading file`, "danger");
+
+					}
+
+					reset_cc();
+
+				  });
+
+				  // request error handler
+				  request.addEventListener("error", function (e) {
+
+					reset_cc();
+
+					show_alert_cc(`Error uploading file`, "warning");
+
+				  });
+
+				  // request abort handler
+				  request.addEventListener("abort", function (e) {
+
+					reset_cc();
+
+					show_alert_cc(`Upload cancelled`, "primary");
+
+				  });
+
+				  // Open and send the request
+				  request.open("post", url);
+				  request.send(data);
+
+				  cancel_btn_cc.addEventListener("click", function () {
+
+					request.abort();
+
+				  })
+
+				}
+				
+
+				// Function to reset the page
+				function reset_cc() {
+
+
+				  // Hide the cancel button
+				  cancel_btn_cc.classList.add("d-none");
+
+				  // Reset the input element
+				  v1.disabled = false;
+
+				  // Show the upload button
+				  upload_btn_cc.classList.remove("d-none");
+
+				  // Hide the loading button
+				  loading_btn_cc.classList.add("d-none");
+
+				  // Hide the progress bar
+				  progress_wrapper_cc.classList.add("d-none");
+
+				  // Reset the progress bar state
+				  progress_cc.setAttribute("style", `width: 0%`);
+
+				
+				}
+				
+				
+				
+				// Function to show alerts
+				function show_alert_cc(message, alert) {
+
+				  alert_wrapper_cc.innerHTML = `
+					<div id="alert" class="alert alert-${alert} alert-dismissible fade show" role="alert">
+					  <span>${message}</span>
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					`
+				}
+
+			</script>
+			
+	  </div>
+	</section>		
+	<br><br><br><br>		
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="healthcare">		
+		<div class="container">
+		<header class="section-header wow fadeInUp">
+			<h3>Health-Care</h3>
+			<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+			<hr>
+		</header>
+		
+		
+			<div class="wrap-contact100">					
+				<div class="contact100-form validate-form">
+					
+					
+						
+				</div>	
+				<div class="contact100-more flex-col-c-m">
+					<div class="container">
+						<h4 class="title" style="text-align: center;"><a href="">Pnemonia Detection</a></h4>
+						<div class="row">
+							<div class="col">
+								<div class="mb-3 mt-3">
+									<div class="thumbnail ">
+										<img class="d-none" id="blah" src="#" alt="Lights" style="width:100%">
+										<div class="caption">
+										<br>
+											<div class="flex-w size1 p-b-16">
+												<div class="flex-col size2">
+													<div id="alert_wrapper_pn"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="form-group mb-3">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" name="file_input" accept="image/*" id="file_input_pn" oninput="input_filename_pn();">
+											<label id="file_input_label_pn" class="custom-file-label" for="image">Select image file..</label>										  
+										</div>								
+									</div>
+									<button onclick="upload_pn('/pnemonia');" id="upload_btn_pn" class="btn btn-primary" >Upload</button>
+									<button class="btn btn-primary d-none" id="loading_btn_pn" type="button" disabled>
+										<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+										Uploading and Processing...
+									</button>
+									<button type="button" id="cancel_btn_pn" class="btn btn-secondary d-none">Cancel upload</button>
+								</div>
+								<div id="progress_wrapper_pn" class="d-none">
+									<label id="progress_status_pn"></label>
+									<div class="progress mb-3">
+										<div id="progress_pn" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+
+							
+
+							</div>
+						</div>
+					 </div>
+				</div>
+			</div>
+		</div>
+			<script type="text/javascript">
+			
+
+				// Get a reference to the progress bar, wrapper & status label
+				var progress_pn = document.getElementById("progress_pn");
+				var progress_wrapper_pn = document.getElementById("progress_wrapper_pn");
+				var progress_status_pn = document.getElementById("progress_status_pn");
+
+				// Get a reference to the 3 buttons
+				var upload_btn_pn = document.getElementById("upload_btn_pn");
+				var loading_btn_pn = document.getElementById("loading_btn_pn");
+				var cancel_btn_pn = document.getElementById("cancel_btn_pn");
+
+				// Get a reference to the alert wrapper
+				var alert_wrapper_pn = document.getElementById("alert_wrapper_pn");
+
+				// Get a reference to the file input element & input label 
+				var input_pn = document.getElementById("file_input_pn");
+				
+				var file_input_label_pn = document.getElementById("file_input_label_pn");
+
+				
+
+				// Function to upload file
+				function upload_pn(url) {
+
+				  // Reject if the file input is empty & throw alert
+				  if (!input_pn.value) {
+
+					show_alert_pn("No file selected", "warning")
+
+					return;
+
+				  }
+
+				  // Create a new FormData instance
+				  var data = new FormData();
+
+				  // Create a XMLHTTPRequest instance
+				  var request = new XMLHttpRequest();
+
+				  // Set the response type
+				  request.responseType = "json";
+
+				  // Clear any existing alerts
+				  alert_wrapper_pn.innerHTML = "";
+
+				  // Disable the input during upload
+				  input_pn.disabled = true;
+
+				  // Hide the upload button
+				  upload_btn_pn.classList.add("d-none");
+
+				  // Show the loading button
+				  loading_btn_pn.classList.remove("d-none");
+
+				  // Show the cancel button
+				  cancel_btn_pn.classList.remove("d-none");
+
+				  // Show the progress bar
+				  progress_wrapper_pn.classList.remove("d-none");
+
+				  // Get a reference to the file
+				  var file = input_pn.files[0];
+				  var oxyval = oxyInput.value;
+				  // Get a reference to the filename
+				  var filename = file.name;
+
+				  // Get a reference to the filesize & set a cookie
+				  var filesize = file.size;
+				  document.cookie = `filesize=${filesize}`;
+
+				  // Append the file to the FormData instance
+				  data.append("file", file);
+				  
+
+				  // request progress handler
+				  request.upload.addEventListener("progress", function (e) {
+
+					// Get the loaded amount and total filesize (bytes)
+					var loaded = e.loaded;
+					var total = e.total
+
+					// Calculate percent uploaded
+					var percent_complete = (loaded / total) * 100;
+
+					// Update the progress text and progress bar
+					progress_pn.setAttribute("style", `width: ${Math.floor(percent_complete)}%`);
+					progress_status_pn.innerText = `${Math.floor(percent_complete)}% uploaded`;
+
+				  })
+
+				  // request load handler (transfer complete)
+				  request.addEventListener("load", function (e) {
+
+					if (request.status == 200) {
+
+					  show_alert_pn(`${request.response.message}`, "success");
+					  
+					}
+					else {
+
+					  show_alert_pn(`Error uploading file`, "danger");
+
+					}
+
+					reset_pn();
+
+				  });
+
+				  // request error handler
+				  request.addEventListener("error", function (e) {
+
+					reset_pn();
+
+					show_alert_pn(`Error uploading file`, "warning");
+
+				  });
+
+				  // request abort handler
+				  request.addEventListener("abort", function (e) {
+
+					reset_pn();
+
+					show_alert_pn(`Upload cancelled`, "primary");
+
+				  });
+
+				  // Open and send the request
+				  request.open("post", url);
+				  request.send(data);
+
+				  cancel_btn_pn.addEventListener("click", function () {
+
+					request.abort();
+
+				  })
+
+				}
+				
+				
+				
+					
+				// Function to update the input placeholder
+				function input_filename_pn() {
+
+					file_input_label_pn.innerText = input_pn.files[0].name;
+					blah.classList.remove("d-none");
+					if (input_pn.files && input_pn.files[0]) {
+						var reader = new FileReader();
+						
+						reader.onload = function(e) {
+						  $('#blah').attr('src', e.target.result);
+						}
+						
+						reader.readAsDataURL(input_pn.files[0]); // convert to base64 string
+					  }
+				
+					
+
+				}
+
+				// Function to reset the page
+				function reset_pn() {
+
+				  // Clear the input
+				  input_pn.value = null;
+
+				  // Hide the cancel button
+				  cancel_btn_pn.classList.add("d-none");
+
+				  // Reset the input element
+				  input_pn.disabled = false;
+
+				  // Show the upload button
+				  upload_btn_pn.classList.remove("d-none");
+
+				  // Hide the loading button
+				  loading_btn_pn.classList.add("d-none");
+
+				  // Hide the progress bar
+				  progress_wrapper_pn.classList.add("d-none");
+
+				  // Reset the progress bar state
+				  progress_pn.setAttribute("style", `width: 0%`);
+
+				  // Reset the input placeholder
+				  file_input_label_pn.innerText = "Select file";
+				  
+				
+				}
+				
+				function closeImg(){
+				blah.classList.add("d-none");
+				
+				reset_pn();
+				}
+				
+				
+				// Function to show alerts
+				function show_alert_pn(message, alert) {
+
+				  alert_wrapper_pn.innerHTML = `
+					<div id="alert" class="alert alert-${alert} alert-dismissible fade show" role="alert">
+					  <span>${message}</span>
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="closeImg();">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+				  `
+
+				}
+
+			</script>
+	</section>
+	<br><br><br><br>
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="Analysis">
+		<div class="container">
+		<header class="section-header wow fadeInUp">
+			<h3>Analysis</h3>
+			<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+			<hr>
+		</header>
+			<div class="wrap-contact100">							
+				<div class="contact100-form validate-form">
+					
+					
+						
+				</div>
+				<div class="contact100-more flex-col-c-m">
+					<div class="container">
+					<h4 class="title" style="text-align: center;"><a href="">Exploratory Data Analysis</a></h4>
+						<div class="row">
+							<div class="col">
+								<div class="mb-3 mt-3">
+									<div class="thumbnail ">
+									<br>
+										<div class="flex-w size1 p-b-16">
+											<div class="flex-col size2">
+												<div id="alert_wrapper_EDA"></div>
+											</div>
+										</div>
+										<div class="caption">
+											<div class="form-group mb-3">
+												<div class="custom-file">
+													<input type="file" class="custom-file-input" name="file_input" accept=".csv" id="file_input" oninput="input_filename();">
+													<label id="file_input_label" class="custom-file-label" for="image">Select csv file..</label>
+												</div>
+											</div>
+											<button onclick="upload('/eda');" id="upload_btn" class="btn btn-primary" >Upload</button>
+											<button class="btn btn-primary d-none" id="loading_btn" type="button" disabled>
+												<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+												Processing... 
+											</button>
+											<button type="button" id="cancel_btn" class="btn btn-secondary d-none">Cancel upload</button>
+										</div>
+									</div>
+									<br>
+								</div>
+								<div id="progress_wrapper" class="d-none">
+								  <label id="progress_status"></label>
+									<div class="progress mb-3">
+										<div id="progress" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<script type="text/javascript">
+			
+
+				// Get a reference to the progress bar, wrapper & status label
+				var progress = document.getElementById("progress");
+				var progress_wrapper = document.getElementById("progress_wrapper");
+				var progress_status = document.getElementById("progress_status");
+
+				// Get a reference to the 3 buttons
+				var upload_btn = document.getElementById("upload_btn");
+				var loading_btn = document.getElementById("loading_btn");
+				var cancel_btn = document.getElementById("cancel_btn");
+
+				// Get a reference to the alert wrapper
+				var alert_wrapper = document.getElementById("alert_wrapper_EDA");
+
+				// Get a reference to the file input element & input label 
+				var input = document.getElementById("file_input");
+				var file_input_label = document.getElementById("file_input_label");
+
+				
+
+				// Function to upload file
+				function upload(url) {
+
+				  // Reject if the file input is empty & throw alert
+				  if (!input.value) {
+
+					show_alert("No file selected", "warning")
+
+					return;
+
+				  }
+
+				  // Create a new FormData instance
+				  var data = new FormData();
+
+				  // Create a XMLHTTPRequest instance
+				  var request = new XMLHttpRequest();
+
+				  // Set the response type
+				  request.responseType = "json";
+
+				  // Clear any existing alerts
+				  alert_wrapper.innerHTML = "";
+
+				  // Disable the input during upload
+				  input.disabled = true;
+
+				  // Hide the upload button
+				  upload_btn.classList.add("d-none");
+
+				  // Show the loading button
+				  loading_btn.classList.remove("d-none");
+
+				  // Show the cancel button
+				  cancel_btn.classList.remove("d-none");
+
+				  // Show the progress bar
+				  progress_wrapper.classList.remove("d-none");
+
+				  // Get a reference to the file
+				  var file = input.files[0];
+
+				  // Get a reference to the filename
+				  var filename = file.name;
+
+				  // Get a reference to the filesize & set a cookie
+				  var filesize = file.size;
+				  document.cookie = `filesize=${filesize}`;
+
+				  // Append the file to the FormData instance
+				  data.append("file", file);
+
+				  // request progress handler
+				  request.upload.addEventListener("progress", function (e) {
+
+					// Get the loaded amount and total filesize (bytes)
+					var loaded = e.loaded;
+					var total = e.total
+
+					// Calculate percent uploaded
+					var percent_complete = (loaded / total) * 100;
+
+					// Update the progress text and progress bar
+					progress.setAttribute("style", `width: ${Math.floor(percent_complete)}%`);
+					progress_status.innerText = `${Math.floor(percent_complete)}% uploaded`;
+
+				  })
+
+				  // request load handler (transfer complete)
+				  request.addEventListener("load", function (e) {
+
+					if (request.status == 200) {
+
+					  show_alert(`${request.response.message}`, "success");
+					  
+					}
+					else {
+
+					  show_alert(`Error uploading file`, "danger");
+
+					}
+
+					reset();
+
+				  });
+
+				  // request error handler
+				  request.addEventListener("error", function (e) {
+
+					reset();
+
+					show_alert(`Error uploading file`, "warning");
+
+				  });
+
+				  // request abort handler
+				  request.addEventListener("abort", function (e) {
+
+					reset();
+
+					show_alert(`Upload cancelled`, "primary");
+
+				  });
+
+				  // Open and send the request
+				  request.open("post", url);
+				  request.send(data);
+
+				  cancel_btn.addEventListener("click", function () {
+
+					request.abort();
+
+				  })
+
+				}
+				
+				
+				
+					
+				// Function to update the input placeholder
+				function input_filename() {
+
+					file_input_label.innerText = input.files[0].name;
+					
+				
+					
+
+				}
+
+				// Function to reset the page
+				function reset() {
+
+				  // Clear the input
+				  input.value = null;
+
+				  // Hide the cancel button
+				  cancel_btn.classList.add("d-none");
+
+				  // Reset the input element
+				  input.disabled = false;
+
+				  // Show the upload button
+				  upload_btn.classList.remove("d-none");
+
+				  // Hide the loading button
+				  loading_btn.classList.add("d-none");
+
+				  // Hide the progress bar
+				  progress_wrapper.classList.add("d-none");
+
+				  // Reset the progress bar state
+				  progress.setAttribute("style", `width: 0%`);
+
+				  // Reset the input placeholder
+				  file_input_label.innerText = "Select file";
+				  
+				
+				}
+				
+				
+				
+				
+				// Function to show alerts
+				function show_alert(message, alert) {
+
+				  alert_wrapper.innerHTML = `
+					<div id="alert" class="alert alert-${alert} alert-dismissible fade show" role="alert">
+					  <span>${message}</span>
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+				  `
+
+				}
+
+			</script>
+	</section>
+	<br><br><br><br>
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="alertSystem">
+		<div class="container">
+			<header class="section-header wow fadeInUp">
+			<h3>Alert System</h3>
+			<p>WILDFIRES CAN BURN millions of acres of land at shockingly fast speeds, consuming everything in their paths. These rolling flames travel up to 14 miles an hour, which converts to about a four-minute-mile pace, and can overtake the average human in minutes.</p>
+			<hr>
+		</header>
+			<div class="wrap-contact100">
+				<div class="contact100-form validate-form">
+					
+					
+					
+				</div>
+				<div class="contact100-more flex-col-c-m">
+					<div class="container">
+						<h4 class="title" style="text-align: center;"><a href="">Forest Fire Spread Detection</a></h4>
+						<div class="row">
+							<div class="col">
+								
+								<div class="mb-3 mt-3">
+									<div class="thumbnail ">
+									  
+										<img class="d-none" id="blah_ff" src="#" alt="Lights" style="width:100%">
+										
+										<div class="caption">
+										<br>
+											<div class="flex-w size1 p-b-16">
+												<div class="flex-col size2">
+													<div id="alert_wrapper_ff"></div>
+												</div>
+											</div>
+										</div>
+									  
+									</div>
+								
+									<br>
+								  <div class="form-group mb-3">
+									<div class="custom-file">
+									  <input type="file" class="custom-file-input" name="file_input" accept="image/*" id="file_input_ff" oninput="input_filename_ff();">
+									  <label id="file_input_label_ff" class="custom-file-label" for="image">Select image file..</label>
+										  <br>
+										  <br>
+										  <div class="form-row">
+											<div class="col">
+											  <input type="number" id="oxyInput" class="form-control form-control-sm" placeholder="Oxygen">
+											</div>
+											<div class="col">
+											  <input type="number" id="tempInput" class="form-control form-control-sm" placeholder="Tempreture">
+											</div>
+											<div class="col">
+											  <input type="number" id ="humInput" class="form-control form-control-sm" placeholder="Humidity">
+											</div>
+										  </div>
+									</div>
+									
+								  </div>
+
+								  <button onclick="upload_ff('/ff_process');" id="upload_btn_ff" class="btn btn-primary" >Upload</button>
+
+								  <button class="btn btn-primary d-none" id="loading_btn_ff" type="button" disabled>
+									<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+									Uploading and Processing...
+								  </button>
+
+								  <button type="button" id="cancel_btn_ff" class="btn btn-secondary d-none">Cancel upload</button>
+
+								</div>
+
+								<div id="progress_wrapper_ff" class="d-none">
+								  <label id="progress_status_ff"></label>
+								  <div class="progress mb-3">
+									<div id="progress_ff" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								  </div>
+								</div>
+
+								
+
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+			<script type="text/javascript">
+			
+
+				// Get a reference to the progress bar, wrapper & status label
+				var progress_ff = document.getElementById("progress_ff");
+				var progress_wrapper_ff = document.getElementById("progress_wrapper_ff");
+				var progress_status_ff = document.getElementById("progress_status_ff");
+
+				// Get a reference to the 3 buttons
+				var upload_btn_ff = document.getElementById("upload_btn_ff");
+				var loading_btn_ff = document.getElementById("loading_btn_ff");
+				var cancel_btn_ff = document.getElementById("cancel_btn_ff");
+
+				// Get a reference to the alert wrapper
+				var alert_wrapper_ff = document.getElementById("alert_wrapper_ff");
+
+				// Get a reference to the file input element & input label 
+				var input_ff = document.getElementById("file_input_ff");
+				var oxyInput =document.getElementById("oxyInput");
+				var tempInput =document.getElementById("tempInput");
+				var humInput =document.getElementById("humInput");
+				var file_input_label_ff = document.getElementById("file_input_label_ff");
+
+				
+
+				// Function to upload file
+				function upload_ff(url) {
+
+				  // Reject if the file input is empty & throw alert
+				  if (!input_ff.value || !oxyInput.value || !tempInput.value || !humInput.value) {
+
+					show_alert_ff("No file selected", "warning")
+
+					return;
+
+				  }
+
+				  // Create a new FormData instance
+				  var data = new FormData();
+
+				  // Create a XMLHTTPRequest instance
+				  var request = new XMLHttpRequest();
+
+				  // Set the response type
+				  request.responseType = "json";
+
+				  // Clear any existing alerts
+				  alert_wrapper_ff.innerHTML = "";
+
+				  // Disable the input during upload
+				  input_ff.disabled = true;
+
+				  // Hide the upload button
+				  upload_btn_ff.classList.add("d-none");
+
+				  // Show the loading button
+				  loading_btn_ff.classList.remove("d-none");
+
+				  // Show the cancel button
+				  cancel_btn_ff.classList.remove("d-none");
+
+				  // Show the progress bar
+				  progress_wrapper_ff.classList.remove("d-none");
+
+				  // Get a reference to the file
+				  var file = input_ff.files[0];
+				  var oxyval = oxyInput.value;
+				  var tempval = tempInput.value;
+				  var humval = humInput.value;
+				  
+				  // Get a reference to the filename
+				  var filename = file.name;
+
+				  // Get a reference to the filesize & set a cookie
+				  var filesize = file.size;
+				  document.cookie = `filesize=${filesize}`;
+
+				  // Append the file to the FormData instance
+				  data.append("file", file);
+				  data.append("oxy", oxyval);
+				  data.append("temp", tempval);
+				  data.append("hum", humval);
+				  
+				  // request progress handler
+				  request.upload.addEventListener("progress", function (e) {
+
+					// Get the loaded amount and total filesize (bytes)
+					var loaded = e.loaded;
+					var total = e.total
+
+					// Calculate percent uploaded
+					var percent_complete = (loaded / total) * 100;
+
+					// Update the progress text and progress bar
+					progress_ff.setAttribute("style", `width: ${Math.floor(percent_complete)}%`);
+					progress_status_ff.innerText = `${Math.floor(percent_complete)}% uploaded`;
+
+				  })
+
+				  // request load handler (transfer complete)
+				  request.addEventListener("load", function (e) {
+
+					if (request.status == 200) {
+
+					  show_alert_ff(`${request.response.message}`, request.response.alert);
+					  console.log(request.response.alert);
+					}
+					else {
+
+					  show_alert_ff(`Error uploading file`, "danger");
+
+					}
+
+					reset_ff();
+
+				  });
+
+				  // request error handler
+				  request.addEventListener("error", function (e) {
+
+					reset_ff();
+
+					show_alert_ff(`Error uploading file`, "warning");
+
+				  });
+
+				  // request abort handler
+				  request.addEventListener("abort", function (e) {
+
+					reset_ff();
+
+					show_alert_ff(`Upload cancelled`, "primary");
+
+				  });
+
+				  // Open and send the request
+				  request.open("post", url);
+				  request.send(data);
+
+				  cancel_btn_ff.addEventListener("click", function () {
+
+					request.abort();
+
+				  })
+
+				}
+				
+				
+				
+					
+				// Function to update the input placeholder
+				function input_filename_ff() {
+
+					file_input_label_ff.innerText = input_ff.files[0].name;
+					blah_ff.classList.remove("d-none");
+					if (input_ff.files && input_ff.files[0]) {
+						var reader = new FileReader();
+						
+						reader.onload = function(e) {
+						  $('#blah_ff').attr('src', e.target.result);
+						}
+						
+						reader.readAsDataURL(input_ff.files[0]); // convert to base64 string
+					  }
+				
+					
+
+				}
+
+				// Function to reset the page
+				function reset_ff() {
+
+				  // Clear the input
+				  input_ff.value = null;
+				  oxyInput.value =null;
+				  tempInput.value =null;
+				  humInput.value =null;
+				  // Hide the cancel button
+				  cancel_btn_ff.classList.add("d-none");
+
+				  // Reset the input element
+				  input_ff.disabled = false;
+
+				  // Show the upload button
+				  upload_btn_ff.classList.remove("d-none");
+
+				  // Hide the loading button
+				  loading_btn_ff.classList.add("d-none");
+
+				  // Hide the progress bar
+				  progress_wrapper_ff.classList.add("d-none");
+
+				  // Reset the progress bar state
+				  progress_ff.setAttribute("style", `width: 0%`);
+
+				  // Reset the input placeholder
+				  file_input_label_ff.innerText = "Select file";
+				  
+				
+				}
+				
+				function closeImg_ff(){
+				blah_ff.classList.add("d-none");
+				
+				reset_ff();
+				}
+				
+				
+				// Function to show alerts
+				function show_alert_ff(message, alert) {
+
+				  alert_wrapper_ff.innerHTML = `
+					<div id="alert" class="alert alert-${alert} alert-dismissible fade show" role="alert">
+					  <span>${message}</span>
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="closeImg_ff();">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+				  `
+
+				}
+
+			</script>
+			
+	</section>		
+	<br><br><br><br>
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="alertSystem">
+			<div class="container">
+				<header class="section-header wow fadeInUp">
+					<h3>Alert-System</h3>
+					<p>Phishing emails and types of other invasive emails have filled inboxing in the wake of COVID-19. Around 18 million emails were automatically filtered by Gmail from the start of the pandemic to today, says Panda Security. There are a number of manual strategies to manage unwanted emails, but none as effective as one that uses a machine learning framework to filter junk mail.</p>
+					<hr>
+				</header>
+				<div class="wrap-contact100">								
+					<div class="contact100-form validate-form">
+					
+						
+					</div>							
+					<div class="contact100-more flex-col-c-m">
+						<h4 class="title" style="text-align: center;"><a href="">Spam Message Detection</a></h4>
+						<div class="form-group">							
+							<textarea class="form-control" id="mess" rows="5" placeholder="Message / Mail /  Youtube-Comment" style="width: 100%;"></textarea>
+							
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="mail-ck" value="1">
+						  <label class="form-check-label" for="mail-ck">Mail</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="message-ck" value="2">
+						  <label class="form-check-label" for="message-ck">Message</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="yt-ck" value="3">
+						  <label class="form-check-label" for="yt-ck">Youtube-Comment</label>
+						</div>
+						<div class="flex-w size1 p-b-16">
+							<div class="flex-col size2">
+								<div id="alert_wrapper_sp"></div>
+							</div>
+						</div>
+						<div class="form-group">
+						<button onclick= "upload_sp('/spam');" id="upload_btn_sp" class="btn btn-primary">Check</button>
+						<button class="btn btn-primary d-none" id="loading_btn_sp" type="button" disabled>
+							<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+							Processing...
+						</button>
+						<button type="button" id="cancel_btn_sp" class="btn btn-secondary d-none">Cancel</button>
+						</div>
+						<div id="progress_wrapper_sp" class="d-none">
+						  <label id="progress_status_sp"></label>
+						  <div class="progress mb-3">
+							<div id="progress_sp" class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						  </div>
+						</div>										
+					</div>
+				</div>
+			</div>
+				<script type="text/javascript">
+			
+
+				// Get a reference to the progress bar, wrapper & status label
+				var progress_sp = document.getElementById("progress_sp");
+				var progress_wrapper_sp = document.getElementById("progress_wrapper_sp");
+				var progress_status_sp = document.getElementById("progress_status_sp");
+
+				// Get a reference to the 3 buttons
+				var upload_btn_sp = document.getElementById("upload_btn_sp");
+				var loading_btn_sp = document.getElementById("loading_btn_sp");
+				var cancel_btn_sp = document.getElementById("cancel_btn_sp");
+
+				// Get a reference to the alert wrapper
+				var alert_wrapper_sp = document.getElementById("alert_wrapper_sp");
+
+				// Get a reference to the file input element & input label 
+				var mess = document.getElementById("mess");
+				
+				
+
+				
+
+				// Function to upload file
+				function upload_sp(url) {
+
+				  // Reject if the file input is empty & throw alert
+				  if (!mess.value) {
+
+					show_alert_sp("Please Enter Message", "warning")
+
+					return;
+
+				  }
+
+				  // Create a new FormData instance
+				  var data = new FormData();
+
+				  // Create a XMLHTTPRequest instance
+				  var request = new XMLHttpRequest();
+
+				  // Set the response type
+				  request.responseType = "json";
+
+				  // Clear any existing alerts
+				  alert_wrapper_sp.innerHTML = "";
+
+				 
+
+				  // Hide the upload button
+				  upload_btn_sp.classList.add("d-none");
+
+				  // Show the loading button
+				  loading_btn_sp.classList.remove("d-none");
+
+				  // Show the cancel button
+				  cancel_btn_sp.classList.remove("d-none");
+
+				  // Show the progress bar
+				  progress_wrapper_sp.classList.remove("d-none");
+
+				 
+				  
+				 
+
+				
+
+				  // Append the file to the FormData instance
+				  data.append("comment", mess.value);
+				  
+
+				  // request progress handler
+				  request.upload.addEventListener("progress", function (e) {
+
+					// Get the loaded amount and total filesize (bytes)
+					var loaded = e.loaded;
+					var total = e.total
+
+					// Calculate percent uploaded
+					var percent_complete = (loaded / total) * 100;
+
+					// Update the progress text and progress bar
+					progress_sp.setAttribute("style", `width: ${Math.floor(percent_complete)}%`);
+					progress_status_sp.innerText = `${Math.floor(percent_complete)}% uploaded`;
+
+				  })
+
+				  // request load handler (transfer complete)
+				  request.addEventListener("load", function (e) {
+
+					if (request.status == 200) {
+
+					  show_alert_sp(`${request.response.message}`, request.response.alert);
+					  
+					}
+					else {
+
+					  show_alert_sp(`Error uploading file`, "danger");
+
+					}
+
+					reset_sp();
+
+				  });
+
+				  // request error handler
+				  request.addEventListener("error", function (e) {
+
+					reset_sp();
+
+					show_alert_sp(`Error uploading file`, "warning");
+
+				  });
+
+				  // request abort handler
+				  request.addEventListener("abort", function (e) {
+
+					reset_sp();
+
+					show_alert_sp(`Upload cancelled`, "primary");
+
+				  });
+
+				  // Open and send the request
+				  request.open("post", url);
+				  request.send(data);
+
+				  cancel_btn_sp.addEventListener("click", function () {
+
+					request.abort();
+
+				  })
+
+				}
+				
+				
+				
+					
+			
+
+				// Function to reset the page
+				function reset_sp() {
+
+				 
+
+				  // Hide the cancel button
+				  cancel_btn_sp.classList.add("d-none");
+
+				 
+
+				  // Show the upload button
+				  upload_btn_sp.classList.remove("d-none");
+
+				  // Hide the loading button
+				  loading_btn_sp.classList.add("d-none");
+
+				  // Hide the progress bar
+				  progress_wrapper_sp.classList.add("d-none");
+
+				  // Reset the progress bar state
+				  progress_sp.setAttribute("style", `width: 0%`);
+
+				  
+				  
+				
+				}
+				
+				
+				
+				
+				// Function to show alerts
+				function show_alert_sp(message, alert) {
+
+				  alert_wrapper_sp.innerHTML = `
+					<div id="alert" class="alert alert-${alert} alert-dismissible fade show" role="alert">
+					  <span>${message}</span>
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+				  `
+
+				}
+
+				</script>
+	</section>
+	<br><br><br><br>
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="Customer">
+		<div class="container">
+		<header class="section-header wow fadeInUp">
+			<h3>Customer Behavior</h3>
+			<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+			<hr>
+		</header>
+			<div class="wrap-contact100">			
+				<div class="contact100-form validate-form">
+				
+					
+					
+				</div>							
+				<div class="contact100-more flex-col-c-m">
+					<form action="/movie" method="POST" id="movie-form">
+						
+						  <div class ="form-group">
+								<button type="submit" id="ff-btn" class="btn btn-primary btn-center btn-lg">Movie</button>
+								
+						  </div>
+					</form>
+				</div>
+			</div>	
+		</div>		
+    </section><!-- #services -->
+	<br><br><br><br>
+	<!--==========================
+      Services Section
+    ============================-->
+    <section id="chatbot">
+		<div class="container">
+		<header class="section-header wow fadeInUp">
+			<h3>chat bot</h3>
+			<p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+			<hr>
+		</header>
+			<div class="wrap-contact100">			
+				<div class="contact100-form validate-form">
+				
+					
+					
+				</div>							
+				<div class="contact100-more flex-col-c-m">
+					<div>
+						<div id="chatbox">
+							<p class="botText"><span>Hi! I'm Chatterbot.</span></p>
+						</div>
+						<!-- <div id="userInput">
+							<input class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="textInput" type="text" name="msg" placeholder="Message">
+							<span><input class="btn btn-primary"  id="buttonInput" type="submit" value="Send"></span>
+						</div> -->
+						<footer>
+							<div class="input-group mb-3" id="userInput">
+								<input class="form-control" id="textInput" type="text" name="msg" placeholder="Message" aria-label="message" aria-describedby="Send">
+								<div class="input-group-append">
+									<button class="btn btn-primary" id="buttonInput" type="submit" value="Send">Send</button>
+								</div>
+							</div>
+						</footer>
+					  <script >
+						function getBotResponse() {
+						  var rawText = $("#textInput").val();
+						  var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+						  $("#textInput").val("");
+						  $("#chatbox").append(userHtml);
+						  
+						  $.get("/get", { msg: rawText }).done(function(data) {
+							var botHtml = '<p class="botText"  ><span>' + data + '</span></p>';
+							$("#chatbox").append(botHtml);
+							
+						  });
+						}
+						$("#textInput").keypress(function(e) {
+							if ((e.which == 13) && document.getElementById("textInput").value != "" ){
+								getBotResponse();
+							}
+						});
+						$("#buttonInput").click(function() {
+							if (document.getElementById("textInput").value != "") {
+								getBotResponse();
+							}
+						})
+					  </script>
+					</div>
+				</div>
+			</div>	
+		</div>		
+    </section><!-- #services -->
+	<br><br><br><br>
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp" >
+          <h3>Team</h3>
+          <p>Talent wins games, but Teamwork and intelligence win championships.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/team-1.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Vaibhav S. Kharatmal</h4>
+                  <span>Data Scietist & ML engineer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/team-2.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Shristhi S. Mondal </h4>
+                  <span>Digital Marketer & Web-App Designer </span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/team-3.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>SelvaGanapati M.</h4>
+                  <span>Web App Dev.  & Security Admin.</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/team-4.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Shreeram Geedh (Mentor) </h4>
+                  <span>ML Engineer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-github"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+	  <div class="section-header wow fadeInUp" >
+          <h3 style="color: #fff;">Contact us</h3>
+		</div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>PVPPCOE</h3>
+            <p> Padmabhushan Vasantdada Patil Pratishthan's College of Engineering is established in 1990 by Late Shri. Manohar (Mama) Phalke with the grace of Late Padmabhushan Vasantdada Patil, the former Chief Minister of Maharashtra and Governor of Rajasthan. </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="https://www.youtube.com/channel/UCqnf8f-JB6upU40d2u7S50Q" class="youtube-play" target="_blank"><i class="fa fa-youtube-play"style="color:red" ></i>youtube</a></li>
+              <li><a href="https://www.facebook.com/Padmabhushan-Vasantdada-Patil-College-Of-Engineering-Sion-Mumbai-559424784180410/ target="_blank"" class="facebook"><i class="fa fa-facebook"style="color:#3b5998"></i>facebook</a></li>
+              <li><a href="https://www.pvppcoe.ac.in/" class="graduation-cap"><i class="fa fa-graduation-cap" target="_blank"></i></a>official-website</li>
+              <li><a href="https://www.instagram.com/pvppcoe_tpo/" class="instagram" target="_blank"><i class="fa fa-instagram" ></i>instagram</a></li>
+              <li><a href="https://www.linkedin.com/organization-guest/school/pvppcoe-padmabhushan-vasantdada-patil-college-of-engineering/?challengeId=AQEwXWigEBiDjQAAAXOULxu_hydDEQLRaogkZUO9fC7wlqOfhnrOPIr3-lNgFhd5dPfdFaAzGqrW15Biyz9U5FkKqQRr1Bhh5A&submissionId=84d13ac9-dbd7-2516-dd4b-d0f95403fd2b" target="_blank"class="linkedin"><i class="fa fa-linkedin"style="color:#3b5998"></i>linkedin</a></li>
+            </ul>
+			<br>
+			<div class="social-links">
+              <a href="https://www.youtube.com/channel/UCqnf8f-JB6upU40d2u7S50Q" class="youtube-play"><i class="fa fa-youtube-play" ></i></a>
+              <a href="https://www.facebook.com/Padmabhushan-Vasantdada-Patil-College-Of-Engineering-Sion-Mumbai-559424784180410/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/pvppcoe_tpo/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.pvppcoe.ac.in/" class="graduation-cap"><i class="fa fa-graduation-cap"></i></a>
+              <a href="https://www.linkedin.com/organization-guest/school/pvppcoe-padmabhushan-vasantdada-patil-college-of-engineering/?challengeId=AQEwXWigEBiDjQAAAXOULxu_hydDEQLRaogkZUO9fC7wlqOfhnrOPIr3-lNgFhd5dPfdFaAzGqrW15Biyz9U5FkKqQRr1Bhh5A&submissionId=84d13ac9-dbd7-2516-dd4b-d0f95403fd2b" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 social-links footer-contact">
+            <h4 >Contact Us</h4>
+            <p>Vasantdada Patil Education Complex,<br>
+			  Eastern Express Highway,<br>
+			  Sion - Chunabhatti,<br>
+			  Near Everard Nagar,<br>
+			  Mumbai, Maharashtra 400022<br>             
+              India <br>
+              <strong>Phone:</strong>+9122 20847226; 20847228; 20847229<br>
+              <strong>Email:</strong>principal@pvppcoe.ac.in<br>
+            </p>
+
+          </div>
+			
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+ <!--  <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{{ url_for('static',filename='lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/easing/easing.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/superfish/hoverIntent.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/superfish/superfish.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/wow/wow.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/waypoints/waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/counterup/counterup.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='lib/touchSwipe/jquery.touchSwipe.min.js') }}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{ url_for('static',filename='contactform/contactform.js') }}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{ url_for('static',filename='js/main.js') }}" type="text/javascript"></script>
+  
+  
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+</body>
+</html>
